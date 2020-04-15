@@ -11,25 +11,25 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="nama_KI">Nama</label>
-                        <input type="text" name="nama_KI" class="form-control" placeholder="">
+                        <input type="text" name="nama_KI" class="form-control" placeholder="" required>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div>
                         <label for="telepon_KI">Telepon</label>
-                        <input type="number" name="telepon_KI" class="form-control" placeholder="ex:+62xxxxxxx">
+                        <input type="number" name="telepon_KI" class="form-control" placeholder="ex:+62xxxxxxx" required>
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="form-group">
                         <label for="email_KI">Email</label>
-                        <input type="text" name="email_KI" class="form-control" placeholder="Email@email.com">
+                        <input type="text" name="email_KI" class="form-control" placeholder="Email@email.com" required>
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label for="alamat_KI">Alamat</label>
-                        <input type="text" name="alamat_KI" class="form-control" placeholder="">
+                        <input type="text" name="alamat_KI" class="form-control" placeholder="" required>
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -66,7 +66,7 @@
                     <div class="form-group ">
                         <label for="alasan_keberatan_KI">Alasan Keberatan</label>
                         
-                            <select name="alasan_keberatan_KI" class="form-control">
+                            <select name="alasan_keberatan_KI" class="form-control" required>
                                 <option value="">-- Pilih --</option>
                                     <?php
                                 foreach($alasankeberatan as $data){
@@ -81,7 +81,7 @@
                 <div class="col-sm-12">
                     <div class="form-group">
                         <label for="deskripsi_keberatan_informasi_KI">Deskripsi Keberatan Informasi</label>
-                        <textarea type="text" name="deskripsi_keberatan_informasi_KI" id="deskripsi_keberatan_informasi_KI" class="form-control" placeholder="Deskripsi..." rows="3"></textarea>
+                        <textarea type="text" name="deskripsi_keberatan_informasi_KI" id="deskripsi_keberatan_informasi_KI" class="form-control" placeholder="Deskripsi..." rows="3" required></textarea>
                     </div>
                 </div>
              

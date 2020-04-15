@@ -15,7 +15,7 @@
             <div class="form-group ">
                         <label for="pilih_identitas_PI">Pilih Identitas</label>
                         
-                            <select name="pilih_identitas_PI" id="pilih_identitas_PI" class="form-control">
+                            <select name="pilih_identitas_PI" id="pilih_identitas_PI" class="form-control" required>
                                 <option value="">-- Pilih --</option>
                                     <?php
                                 foreach($pilihidentitas as $data){
@@ -30,31 +30,31 @@
             <div class="col-sm-10">
                 <div class="form-group">
                     <label for="nomor_identitas_PI">Nomor Indentitas</label>
-                    <input type="text" name="nomor_identitas_PI" id="nomor_identitas_PI" class="form-control" placeholder="NIP/NIK">
+                    <input type="text" name="nomor_identitas_PI" id="nomor_identitas_PI" class="form-control" placeholder="NIP/NIK" required>
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="form-group">
                     <label for="nama_PI">Nama</label>
-                    <input type="text" name="nama_PI" id="nama_PI" class="form-control" placeholder="">
+                    <input type="text" name="nama_PI" id="nama_PI" class="form-control" placeholder="" required>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label for="unit_kerja_PI">Unit Kerja</label>
-                    <input type="text" name="unit_kerja_PI" id="unit_kerja_PI" class="form-control" placeholder="">
+                    <input type="text" name="unit_kerja_PI" id="unit_kerja_PI" class="form-control" placeholder="" required>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label for="sub_unit_kerja_PI">Sub Unit Kerja</label>
-                    <input type="text" name="sub_unit_kerja_PI" id="sub_unit_kerja_PI" class="form-control" placeholder="">
+                    <input type="text" name="sub_unit_kerja_PI" id="sub_unit_kerja_PI" class="form-control" placeholder="" required>
                 </div>
             </div>
             <div class="col-sm-12">
                 <div class="form-group">
                     <label for="alamat_PI">Alamat</label>
-                    <input type="text" name="alamat_PI" id="alamat_PI" class="form-control" placeholder="">
+                    <input type="text" name="alamat_PI" id="alamat_PI" class="form-control" placeholder="" required>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -62,7 +62,7 @@
                 <label for="provinsi">Provinsi</label>
                
         
-                <select name="provinsi" id="provinsi" class="form-control" >
+                <select name="provinsi" id="provinsi" class="form-control" required>
                     <option value="">Pilih Provinsi</option>
                     <?php 
                     foreach($provinsi as $data){
@@ -77,7 +77,7 @@
             <div class="form-group " id= "kab_box">
             
                 <label for="kota">Kab/Kota</label>
-                <select name="kota" id="kota" class="form-control" >
+                <select name="kota" id="kota" class="form-control" required>
                 <option value="">Pilih Kab/Kota</option>
                 <?php 
                     foreach($kota as $data){
@@ -93,7 +93,7 @@
             <div class="form-group ">
                         <label for="kategori_permohonan_PI">Kategori Permohonan</label>
                         
-                            <select name="kategori_permohonan_PI" id="kategori_permohonan_PI" class="form-control">
+                            <select name="kategori_permohonan_PI" id="kategori_permohonan_PI" class="form-control" required>
                                 <option value="">-- Pilih --</option>
                                     <?php
                                 foreach($kategoripermohonan as $data){
@@ -108,14 +108,14 @@
             <div class="col-sm-12">
             <div class="form-group">
                 <label for="deskripsi_permohonan_informasi_PI">Deskripsi Permohonan Informasi</label>
-                <textarea type="text" name="deskripsi_permohonan_informasi_PI" id="deskripsi_permohonan_informasi_PI" class="form-control" placeholder="Deskripsi..." rows="3"></textarea>
+                <textarea type="text" name="deskripsi_permohonan_informasi_PI" id="deskripsi_permohonan_informasi_PI" class="form-control" placeholder="Deskripsi..." rows="3" required></textarea>
             </div>
             </div>
             <div class="col-sm-6">
             <div class="form-group ">
                         <label for="bidang_yang_dituju_PI">Bidang Yang Dituju</label>
                         
-                            <select name="bidang_yang_dituju_PI" id="bidang_yang_dituju_PI" class="form-control">
+                            <select name="bidang_yang_dituju_PI" id="bidang_yang_dituju_PI" class="form-control" required>
                                 <option value="">-- Pilih --</option>
                                     <?php
                                 foreach($bidangyangdituju as $data){

@@ -10,25 +10,25 @@
             <div class="col-sm-6">
             <div class="form-group">
                 <label for="nama_PA">Nama</label>
-                <input type="text" name="nama_PA" id="nama_PA" class="form-control" placeholder="Nama Pelapor">
+                <input type="text" name="nama_PA" id="nama_PA" class="form-control" placeholder="Nama Pelapor" required>
             </div>
             </div>
             <div class="col-sm-6">
             <div class="form-group">
                 <label for="telepon_PA">Telepon</label>
-                <input type="number" name="telepon_PA" id="telepon_PA" class="form-control " placeholder="Nomor Telepon">
+                <input type="number" name="telepon_PA" id="telepon_PA" class="form-control " placeholder="Nomor Telepon" required>
             </div>
             </div>
             <div class="col-sm-8">
             <div class="form-group">
                 <label for="email_PA">Email</label>
-                <input type="text" name="email_PA" id="email_PA" class="form-control" placeholder="Email@email.com">
+                <input type="text" name="email_PA" id="email_PA" class="form-control" placeholder="Email@email.com" required>
             </div>
             </div>
             <div class="col-sm-12">
             <div class="form-group">
                 <label for="alamat_PA">Alamat</label>
-                <input type="text" name="alamat_PA" id="alamat_PA" class="form-control" placeholder="">
+                <input type="text" name="alamat_PA" id="alamat_PA" class="form-control" placeholder="" required>
             </div>
             </div>
             <div class="col-sm-6">
@@ -36,7 +36,7 @@
                 <label for="provinsi">Provinsi</label>
                
         
-                <select name="provinsi" id="provinsi" class="form-control" >
+                <select name="provinsi" id="provinsi" class="form-control" required>
                     <option value="">Pilih Provinsi</option>
                     <?php 
                     foreach($provinsi as $data){
@@ -51,7 +51,7 @@
             <div class="form-group" id= "kab_box">
             
                 <label for="kota">Kab/Kota</label>
-                <select name="kota" id="kota" class="form-control" >
+                <select name="kota" id="kota" class="form-control" required >
                 <option value="">Pilih Kab/Kota</option>
                 <?php 
                     foreach($kota as $data){
@@ -66,31 +66,31 @@
             <div class="col-sm-3">
             <div class="form-group">
                 <label for="nip_terlapor_PA">NIP Terlapor</label>
-                <input type="number" name="nip_terlapor_PA" id="nip_terlapor_PA" class="form-control" placeholder="">
+                <input type="number" name="nip_terlapor_PA" id="nip_terlapor_PA" class="form-control" placeholder="" required>
             </div>
             </div>
             <div class="col-sm-4">
             <div class="form-group">
                 <label for="nama_terlapor_PA">Nama Terlapor</label>
-                <input type="text" name="nama_terlapor_PA" id="nama_terlapor_PA" class="form-control" placeholder="">
+                <input type="text" name="nama_terlapor_PA" id="nama_terlapor_PA" class="form-control" placeholder="" required>
             </div>
             </div>
             <div class="col-sm-5">
             <div class="form-group">
                 <label for="indentitas_terlapor_PA">Indentitas Terlapor</label>
-                <input type="text" name="indentitas_terlapor_PA"  id="indentitas_terlapor_PA" class="form-control" placeholder="Indentitas Terlapor">
+                <input type="text" name="indentitas_terlapor_PA"  id="indentitas_terlapor_PA" class="form-control" placeholder="Indentitas Terlapor" required>
             </div>
             </div>
             <div class="col-sm-12">
             <div class="form-group">
                 <label for="deskripsi_terlapor_PA">Deskripsi Pelaporan</label>
-                <textarea  type="text" name="deskripsi_terlapor_PA"  id="deskirpsi_pelaporan_PA" class="form-control  " placeholder="Deskripsi Pelaporan" rows="3"></textarea>
+                <textarea  type="text" name="deskripsi_terlapor_PA"  id="deskirpsi_pelaporan_PA" class="form-control  " placeholder="Deskripsi Pelaporan" rows="3" required></textarea>
                     </div>
             </div>
             <div class="col-sm-4">
             <div class="form-group">
                 <label for="saksi_PA">Saksi</label>
-                <input type="text" name="saksi_PA" id="saksi_PA" class="form-control" placeholder="">
+                <input type="text" name="saksi_PA" id="saksi_PA" class="form-control" placeholder="" required>
             </div>
             </div>
             <div class="form-group">
