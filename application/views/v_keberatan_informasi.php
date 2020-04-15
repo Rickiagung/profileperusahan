@@ -84,6 +84,16 @@
                         <textarea type="text" name="deskripsi_keberatan_informasi_KI" id="deskripsi_keberatan_informasi_KI" class="form-control" placeholder="Deskripsi..." rows="3"></textarea>
                     </div>
                 </div>
+                <div class="col-sm-12">
+            <div class="row">
+                  <div class="col text-center">
+                    <div class="form-group row">
+                    <div class="g-recaptcha" data-sitekey="isi_dengan_site_key_nya"></div>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
                     <div class="form-group">
           
                     <?php echo $captcha // tampilkan recaptcha ?>
@@ -150,5 +160,6 @@
              
         });
     </script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
 
 </html>

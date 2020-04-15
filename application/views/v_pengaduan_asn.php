@@ -101,6 +101,16 @@
             <div class="row">
                   <div class="col text-center">
                     <div class="form-group row">
+                    <div class="g-recaptcha" data-sitekey="isi_dengan_site_key_nya"></div>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="row">
+                  <div class="col text-center">
+                    <div class="form-group row">
                     <input class="btn btn-success" type="submit" name="btn" value="Simpan"/>
                      
                     </div>
@@ -135,6 +145,7 @@
         });
     });
 </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </div>
 </div>
 <?php $this->load->view('v_footer');?>

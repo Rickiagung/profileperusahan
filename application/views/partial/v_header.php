@@ -63,7 +63,12 @@
 
 .mydropdown:hover .mydropdown-content {
     display: block;
-}</style>
+}
+.gambar{
+	height: 60px;
+  	width: 275px;
+}
+</style>
 	<!-- Modernizr JS -->
 	<script src="<?php echo base_url().'theme/js/modernizr-2.6.2.min.js'?>"></script>
 
@@ -85,11 +90,11 @@
 <header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header">
-				<h1 class=" text-light bg-dark"> <img src="<?php echo base_url(); ?>assets/images/pemprov2.png"></h1>
-				<nav class="right" role="navigation">
+				<h1 class=" text-light bg-dark"> <img class="gambar" src="<?php echo base_url(); ?>assets/images/pemprov2.png"></h1>
+				<nav class="right navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" role="navigation">
 								
 								<div class="mydropdown">
-    							<a class="dropbtn">Formulir</a>
+    							<a style="letter-spacing: 0.4em;" class="dropbtn">Formulir</a>
     							<div class="mydropdown-content">
 												<a href="<?php echo site_url('Pengaduan_asn'); ?>">Pengaduan ASN</a>
 												<a href="<?php echo site_url('Keberatan_informasi'); ?>">Keberatan Informasi </a>
@@ -98,7 +103,7 @@
 								</div>
   								</div>
 								<div class="mydropdown">
-								<a class="dropbtn">Daftar Informasi</a>
+								<a style="letter-spacing: 0.4em;" class="dropbtn">Daftar Informasi</a>
     							<div class="mydropdown-content">
 												<a href="<?php echo base_url('Informasi_berkala');?>">Informasi Berkala</a>
 												<a href="https://bkd.jatengprov.go.id/assets/download/Daft_Informasi_Dikecualikan.pdf" >Informasi Dikecualikan</a>
@@ -107,7 +112,7 @@
 								</div>
   								</div>
 								<div class="mydropdown">
-    							<a class="dropbtn">Profil PPID</a>
+    							<a style="letter-spacing: 0.6em;" class="dropbtn">Profil PPID </a>
     							<div class="mydropdown-content">
 											<a href="<?php echo site_url('Visi_misi'); ?>">Visi Misi</a>
 											<a href="<?php echo site_url('profile'); ?>">Profil Badan Publik</a>
@@ -121,8 +126,8 @@
 											<a href="https://bkd.jatengprov.go.id/assets/download/Maklumat_Pelayanan1.pdf">Maklumat Pelayanan</a>
 								</div>
 								</div>
-								<div class="mydropdown">
-								<a class="dropbtn" href="<?php echo site_url('home'); ?>">Home</a>
+								<div  class="mydropdown">
+								<a style="letter-spacing: 0.4em;" class="dropbtn" href="<?php echo site_url('home'); ?>">Home</a>
 								</div>
 						
 			 
