@@ -2,8 +2,10 @@
 <html class="no-js">
 
 <?php $this->load->view('partial/v_header');?>
+<?php $this->load->view('partial/v_nav');?>
 
-	<div id="fh5co-why-us" class="animate-box">
+
+	<div id="fh5co-why-us"  id="tab-es6" class="animate-box et-slide">
 		<div class="container">
 			<div class="row">
 
@@ -31,7 +33,7 @@
 	</div>
 
 
-	<div class="fh5co">
+	<div class="fh5co" id="#tab-flexbox">
 
 		
 		<div class="fh5co-box animate-box">
@@ -61,7 +63,7 @@
 
 
 
-	<div id="fh5co-blog" class="animate-box">
+	<div id="fh5co-blog" class="animate-box" >
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
@@ -100,10 +102,11 @@
 				</div>
 			</div>
 		</div>
-		<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-		<span id="timeToRender"></span>
-	</div>
 
+
+	</div>
+	<div id="chartContainer" id="#tab-angular" style="height: 370px; width: 100%;"></div>
+	<span id="timeToRender"></span>
 
 	<?php $this->load->view('v_footer');?>
 	</div>

@@ -3,8 +3,6 @@
 
         <?=$header;?>
 
-
-
     </header>
 
     <body>

@@ -46,7 +46,7 @@
 
 
 			<div class="col-md-12 fh5co-copyright text-center">
-				<p>&copy; 2020 by <a href="http://mfikri.com/" target="_blank"></a>. All Rights Reserved.</p>
+				<p>&copy; 2020 by <a  target="_blank"></a>. All Rights Reserved.</p>
 			</div>
 
 		</div>

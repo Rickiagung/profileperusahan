@@ -112,13 +112,13 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a {
   text-decoration: none;
-  display: block;
+ 
   width: 40px;
   height: 40px;
   margin: -20px 0 0;
   position: absolute;
   top: 50%;
-  z-index: 10;
+  z-index: 0;
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
@@ -166,7 +166,7 @@ html[xmlns] .flexslider .slides {
   opacity: 0!important;
   filter: alpha(opacity=0);
   cursor: default;
-  z-index: -1;
+ 
 }
 .flex-pauseplay a {
   display: block;
@@ -176,7 +176,7 @@ html[xmlns] .flexslider .slides {
   bottom: 5px;
   left: 10px;
   opacity: 0.8;
-  z-index: 10;
+  z-index: 0;
   overflow: hidden;
   cursor: pointer;
   color: #000;

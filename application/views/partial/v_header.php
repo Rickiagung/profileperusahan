@@ -29,18 +29,21 @@
 	<link rel="stylesheet" href="<?php echo base_url().'theme/css/morris.css'?>">
 	<style>
 	.dropbtn {
-    background-color: green;
-    color: white;
+
+	color: black;
+	font-weight: bold;
     padding: 16px;
     font-size: 16px;
 	border: none;
 	display: inline-block;
+	z-index: 10;
 	}
 
 	.mydropdown {
     position: relative;
 	display: inline-block;
 	float:right;
+	z-index: 10;
 	}
 
 	.mydropdown-content {
@@ -49,7 +52,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 20;
 	}
 
 	.mydropdown-content a {
@@ -64,10 +67,165 @@
 .mydropdown:hover .mydropdown-content {
     display: block;
 }
-.gambar{
-	height: 60px;
-  	width: 275px;
+
+@media screen and (max-width: 660px) {
+	.dropbtn {
+
+color: black;
+font-weight: bold;
+padding: 16px;
+font-size: 16px;
+border: none;
+
+z-index: 10;
 }
+
+.mydropdown {
+position: relative;
+display: inline-block;
+float:right;
+z-index: 10;
+}
+
+.mydropdown-content {
+display: none;
+position: relative;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 20;
+}
+
+.mydropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.mydropdown-content a:hover {background-color: #f1f1f1}
+
+.mydropdown:hover .mydropdown-content {
+display: block;
+}
+
+}
+.gambar{
+	height: 80px;
+  	width: 320px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 10;
+}
+
+.nav > .nav-header {
+  display: inline;
+  z-index: 10;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.slider{
+	z-index: 1;
+  }
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+}
+
 </style>
 	<!-- Modernizr JS -->
 	<script src="<?php echo base_url().'theme/js/modernizr-2.6.2.min.js'?>"></script>
@@ -83,18 +241,21 @@
 
 	</head>
 	<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+  	<div class="container">
 
+	<div class="nav " id="navbar">
+  	<input type="checkbox" id="nav-check">
+  	<div class="nav-header">
+    <div class="nav-title">
+	<h1 class=" text-light bg-dark"> <img class="gambar" src="<?php echo base_url(); ?>assets/images/logo-bkd-hitam.png"></h1>
+    </div>
+  	</div>
 
-
-<div id="fh5co-page">
-<header id="fh5co-header" role="banner">
-		<div class="container">
-			<div class="header">
-				<h1 class=" text-light bg-dark"> <img class="gambar" src="<?php echo base_url(); ?>assets/images/pemprov2.png"></h1>
-				<nav class="right navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" role="navigation">
-								
-								<div class="mydropdown">
-    							<a style="letter-spacing: 0.4em;" class="dropbtn">Formulir</a>
+  
+  <div class="nav-links ">
+  <div class="mydropdown">
+    							<a style="letter-spacing: 0.6em;" class="dropbtn">Formulir</a>
     							<div class="mydropdown-content">
 												<a href="<?php echo site_url('Pengaduan_asn'); ?>">Pengaduan ASN</a>
 												<a href="<?php echo site_url('Keberatan_informasi'); ?>">Keberatan Informasi </a>
@@ -103,7 +264,7 @@
 								</div>
   								</div>
 								<div class="mydropdown">
-								<a style="letter-spacing: 0.4em;" class="dropbtn">Daftar Informasi</a>
+								<a style="letter-spacing: 0.5em;" class="dropbtn">Daftar Informasi</a>
     							<div class="mydropdown-content">
 												<a href="<?php echo base_url('Informasi_berkala');?>">Informasi Berkala</a>
 												<a href="https://bkd.jatengprov.go.id/assets/download/Daft_Informasi_Dikecualikan.pdf" >Informasi Dikecualikan</a>
@@ -130,16 +291,14 @@
 								<a style="letter-spacing: 0.4em;" class="dropbtn" href="<?php echo site_url('home'); ?>">Home</a>
 								</div>
 						
-			 
-						
-					
-	
-				</nav>
-			</div>
-		</div>
-	</header>
-	<aside id="fh5co-hero" class="js-fullheight">
-		<div class="flexslider js-fullheight">
+  </div>
+</div>
+
+  </div>
+</nav>
+
+	<aside  id="fh5co-hero" class="js-fullheight">
+		<div class="flexslider js-fullheight ">
 			<ul class="slides">
 		  
 			   <li style="background-image: url(<?php echo base_url().'theme/images/slide_1.jpg'?>);">
@@ -187,3 +346,18 @@
 		  	</ul>
 	  	</div>
 	</aside>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
